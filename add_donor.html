@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Add Donor</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="header">
+Blood Bank Management System
+</div>
+
+<div class="sidebar">
+<a href="dashboard.php">Dashboard</a>
+<a href="add_donor.html">Add Donor</a>
+<a href="view_donors.php">View Donors</a>
+<a href="logout.php">Logout</a>
+</div>
+
+<div class="main">
+<div class="card">
+
+<h2>Add Blood Donor</h2>
+<form action="insert_donor.php" method="POST">
+
+<label>Name</label><br>
+<input type="text" name="name" required><br><br>
+
+<label>Blood Group</label><br>
+<select name="blood_group" required>
+<option value="">Select</option>
+<option>A+</option>
+<option>A-</option>
+<option>B+</option>
+<option>B-</option>
+<option>O+</option>
+<option>O-</option>
+<option>AB+</option>
+<option>AB-</option>
+</select><br><br>
+
+<label>Age</label><br>
+<input type="number" name="age"><br><br>
+
+<label>Gender</label><br>
+<select name="gender">
+<option>Male</option>
+<option>Female</option>
+<option>Other</option>
+</select><br><br>
+
+<label>Phone</label><br>
+<input type="text" name="phone"><br><br>
+
+<label>City</label><br>
+<input type="text" name="city"><br><br>
+
+<label>Last Donation Date</label><br>
+<input type="date" name="last_donation"><br><br>
+
+<label>Address</label><br>
+<textarea name="address"></textarea><br><br>
+
+<button type="submit">Add Donor</button>
+
+</form>
+
+</div>
+</div>
+
+</body>
+</html>
